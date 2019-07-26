@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
 
-function App() {
+import ActivityList from './ActivityList';
+import { ActivityProvider } from './ActivityContext';
+
+const App = () => {
   return (
-    <div className="App">
-      labadiena
-    </div>
+    <ActivityProvider>
+      <div className='container'>
+        <ActivityList />
+      </div>
+    </ActivityProvider>
   );
-}
+};
 
 export default App;
